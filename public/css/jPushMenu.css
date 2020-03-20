@@ -1,0 +1,135 @@
+/* General styles for all menus */
+.menu-open .mask-small {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 201;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+.menu-open .mask-small {
+    visibility: visible;
+    opacity: .6;
+}
+.cbp-spmenu {
+    background: #fff;
+    position: fixed;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.18);
+}
+.cbp-spmenu h2 {
+    color: #444;
+	font-size:18px;
+    padding: 20px 20px 10px;
+    margin: 0;
+	font-weight:bold;
+}
+.cbp-spmenu .close-filter{
+	height:15px;
+	width:15px;
+	float:right;
+	background:url(../images/licon-close-grey.svg) no-repeat 0 transparent;
+	display:block;
+}
+.cbp-spmenu h3 {
+    color: #666;
+	font-size:14px;
+	text-transform:uppercase;
+    padding: 10px;
+    margin: 0;
+    font-weight: 300;
+}
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+.cbp-spmenu-left {
+    left: -240px;
+}
+.cbp-spmenu-left.menu-open {
+    left: 0px;
+}
+.push-body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+.cbp-spmenu{
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+@media screen and (max-height: 26.375em) {
+    .cbp-spmenu-vertical {
+        font-size: 90%;
+        width: 190px;
+    }
+    .cbp-spmenu-left,
+    .push-body-toleft {
+        left: -190px;
+    }
+}
+.cbp-spmenu .filter-panel {
+	border-bottom:1px solid #eee;
+	padding:10px;
+}
+.cbp-spmenu h3 .expander{
+	display:block;
+	float:right;
+	margin:2px 0 0 0;
+	cursor:pointer;
+}
+.cbp-spmenu h3 .expander i{
+	width:10px;
+	height:11px;
+	display:block;
+	transition:all .3s ease;
+	background:url(../images/licon-plus-gray.svg) no-repeat 0 transparent;
+	transform:rotate(0deg)
+}
+.cbp-spmenu h3[aria-expanded=true] .expander i{
+	transform:rotate(-45deg);
+}
+.cbp-spmenu .aside-filter__list{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.cbp-spmenu .aside-filter__list .aside-filter__item a{
+	padding:10px;
+	display:block;
+	color:#666;
+	font-size:13px;
+}
+.cbp-spmenu .aside-filter__list .aside-filter__item a:hover{
+	background-color:#eee;
+}
+.cbp-spmenu .aside-filter__list .aside-filter__item a:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin: -1px 16px 0 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/checkbox.svg);
+}
+.cbp-spmenu .aside-filter__list .aside-filter__item.active a:after {
+    background-image: url(../images/checkox_active.svg);
+}
+.cbp-spmenu .row.price-filter{
+	margin-left:0;
+	margin-right:0;
+}
+.cbp-spmenu .row.price-filter > .col-xs-6{
+	padding-left:5px;
+	padding-right:5px;
+}

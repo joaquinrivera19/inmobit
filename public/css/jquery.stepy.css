@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+/*.button-back { float: left; }
+.button-next, .finish { float: right; }
+.button-back, .button-next, .finish {
+	border: 1px solid #C9C4BA; color: #7F0055; cursor: pointer; font: 10px verdana; padding: 3px 10px; text-decoration: none;
+	-khtml-border-radius: 3px; -moz-border-radius: 3px; -opera-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+.button-back:hover, .button-next:hover, .finish:hover { border-color: #DFDCD6; color: #B07; }*/
+
+.step {
+	clear: left;
+	-khtml-border-radius: 3px; -moz-border-radius: 3px; -opera-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+/*.step label { color: #444; display: block; font: bold 10px verdana; margin: 10px 0 3px 7px; }*/
+.step legend { display: none}
+/*.step input, .step textarea, .step select { border: 1px solid #AAA; font: 10px verdana; }*/
+
+/*.error-image { background: url('../img/error.png') no-repeat right top; }*/
+
+.stepy-titles { list-style: none; margin: 0; padding: 0; width: 100%; }
+.stepy-titles li { color: #fff; cursor: pointer; float: left; padding: 10px; background-color:#fc2151;margin: 30px 5px 30px 0;}
+.stepy-titles li span{display: none}
+.stepy-titles .current-step { color: #fff; cursor: auto; background-color:#999;  }
+.stepy-titles .current-step span{display: none}
+
+/*** Optionaly (jQuery Validate) ***/
+
+.error { background-color: #FAF4F4; }
+
+/*
+label.error { background: url('../img/alert.png') no-repeat; color: #DE5130; display: block; float: left; font: 10px verdana; height: 13px; margin: 3px 3px 0 10px; padding-left: 21px; padding-top: 2px; }*/
